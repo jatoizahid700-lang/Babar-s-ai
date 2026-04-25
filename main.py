@@ -34,7 +34,7 @@ if prompt := st.chat_input("Yahan sawal likhen..."):
     try:
         # Get response from Groq
         response = client.chat.completions.create(
-            model="llama3-8b-8192",
+            model="llama-3.3-70b-versatile",
             messages=[
                 {"role": m["role"], "content": m["content"]}
                 for m in st.session_state.messages
